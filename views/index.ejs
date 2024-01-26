@@ -1,0 +1,31 @@
+
+  <%- include("header.ejs") %>
+  
+  
+
+  <% if (locals.search){ %>
+    <% if (search == 0) { %>
+      <%- include("error.ejs") %>
+    <%} else { %>
+      <%- include("search.ejs") %>
+    <%}%>
+  <%} else if (locals.content){%>
+    <br/>
+    <!-- CARD -->
+    <main>
+        <div class = "card">
+          <img src="<%= imgURL %>" >
+          <div class="card-content">
+            <h2><%= title %></h2>
+            <p>Episodes: <%= EP %><br>Source material: <%= sourceMat %><br>Status: <%= stat %><br>Ranking: <%= ranking%><br>
+            <span class = "content-preview" style="font-size: 1rem;">Synopsis: <%= content.synopsis%></span>
+            </p>
+        </div>
+      </div>
+    </main>
+  <% } else if (locals.error) { %>
+    <%= error %>
+  <% } else {%>
+    <%- include("body.ejs") %>
+  <% } %>
+ <%- include("footer.ejs") %>

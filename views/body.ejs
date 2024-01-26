@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/searchbar.css" rel="stylesheet">
+</head>
+<body>
+    <div style = "height: 75vh; display: flex; justify-content: center; align-items: center;">
+        <span style="font-weight:900; font-size:2rem; line-height:1; box-sizing:border-box; color: rgb(255, 255, 255); letter-spacing: 1px;">
+            WELCOME TO 
+            <span class = "px-1 py-1" style = "border:2px solid white; border-radius:3px; letter-spacing: 1px;">
+            ANI<span style = "color: orange;">GEN</span>
+            </span>
+        </span>
+    </div>
+    
+    <div class="container">
+        <form action = "/search" method = "post">
+            <input type="text" placeholder="Search Your Favourite Anime" name="search" autocomplete="off">
+            <input id = "page" type = "hidden" name = "page" value="1">
+        </form>
+        <div class="search"></div>
+    </div>
+    
+</body>
+</html>
