@@ -18,22 +18,13 @@
   <body>
   <!-- header -->
   
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none px-2" style="border:2px solid black; border-radius:3px;">
-      <span style="font-weight:900; font-size:1.1em; line-height:1; box-sizing:border-box; color: rgba(43, 43, 43, 1); letter-spacing: 1px;">ANIGEN</span>
+  <header class="d-flex flex-wrap justify-content-between py-3 mb-4" style="border-bottom: 5px solid orange;">
+    <a href="/" class="d-flex felx-wrap align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none px-2 py-2" style="width: fit-content;border:2px solid black; border-radius:3px;">
+      <span style="font-weight:900; font-size:1.1em; line-height:1; box-sizing:border-box; color: rgba(43, 43, 43, 1); letter-spacing: 1px;"> BOOKBASE </span>
+    </a>
+    <button class=" btn btn-warning" type="button" style="background-color: rgba(0, 0, 0, 0); border:2px solid black; border-radius:3px;">
+      <a href = "/random" style="text-decoration: none;">
+          <span style="font-weight:900; font-size:1.1em; line-height:1; color: rgba(43, 43, 43, 1);">Generate</span>
       </a>
-
-      <form action = "/search" method = "post">
-        <input id = "page" type = "hidden" name = "page" value="1">
-        <div class="d-flex">
-          <input id = "search" type="search" placeholder="Anime Title" name="search" autocomplete="off">
-          <input id = "search-btn" type="submit" name = "search-btn" value = "Search">
-        </div>
-      </form>
-
-      <button class=" btn btn-warning" type="button" style="background-color: rgba(0, 0, 0, 0); border:2px solid black; border-radius:3px;">
-          <a href = "/random" style="text-decoration: none;">
-              <span style="font-weight:900; font-size:1.1em; line-height:1; color: rgba(43, 43, 43, 1);">Generate</span>
-          </a>
-      </button>
-  </header>
+    </button>
+</header>
